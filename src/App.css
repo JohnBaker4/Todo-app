@@ -1,0 +1,25 @@
+#container {
+  padding: 16px;
+  text-align: center;
+  background-color: darkblue;
+  color: white;
+  margin: 16px;
+  border-radius: 8px;
+}
+
+.delete-button {
+  background-color: darkblue;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+.button:hover {
+  background-color: #003399;
+}
+
+li {
+margin-bottom: 8px;
+}
