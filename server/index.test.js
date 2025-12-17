@@ -7,6 +7,7 @@ const testUser = { email: "foo@foo.com", password: "password123" }
 initializeTestDb()
 token = getToken(testUser)
 })
+
  it("should get all tasks", async () => {
  const response = await fetch("http://localhost:3001/")
  const data = await response.json()
@@ -25,6 +26,7 @@ it("should create a new task", async () => {
     Authorization: token },
  body: JSON.stringify({ task: newTask })
  })
+ 
  const data = await response.json()
  expect(response.status).to.equal(201)
  expect(data).to.include.all.keys(["id", "description"])
@@ -52,7 +54,7 @@ it("should create a new task", async () => {
  })
 
  describe("Testing user management", () => {
-
+const user = { email: "foo2@test.com", password: "password123" }
    before(() => {
  insertTestUser(user)
    })
