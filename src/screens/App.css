@@ -1,0 +1,13 @@
+#container {
+  padding: 16px;
+  text-align: center;
+  background-color: darkblue;
+  color: white;
+  margin: 16px;
+  border-radius: 8px;
+}
+
+
+li {
+margin-bottom: 8px;
+}
